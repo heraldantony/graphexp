@@ -1,3 +1,19 @@
+#Note for this fork
+
+  This is a work in progress ...
+  React/Redux hack of graph explorer
+  To run
+     * npm install
+     * npm run start
+   This will start a web server running on port 8880. The web server is to avoid the rare case where
+   gremlin server is not setup to support CORS.
+   Connect to http://localhost:8880/index.html to query the graph database through gremlin server.
+   Edit the "devServer" options in webpack.config.js to change the port.
+   If you are using TinkerPop 3.3, then change TINKER_VERSION in src/common/actions/conf/index.js.
+   export const TINKER_VERSION = 3.3;
+   
+   There is a ".babelrc" file in the root folder, which is required for proper compilation.
+   
 # Graphexp: graph explorer with D3.js
 
 Graphexp is a lightweight web interface to explore and display a graph stored in a Gremlin graph database, via the Gremlin server. 
